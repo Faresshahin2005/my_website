@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<rect width="1200" height="620" fill="#eaf2fb"/>
+<path d="M0 120L1200 20M0 300L1200 190M0 500L1200 390M180 0L330 620M470 0L600 620M820 0L900 620M1050 0L1100 620" stroke="#c7d9ec" stroke-width="18" fill="none"/>
+<path d="M-20 420C180 350 260 460 420 370S700 280 820 350 1030 470 1220 330" stroke="#8ec5e8" stroke-width="38" fill="none"/>
+<path d="M100 60L300 60L300 200L100 200ZM700 60L930 60L930 180L700 180ZM420 420L620 420L620 560L420 560Z" fill="#d6e6d4" stroke="#b7cfb2" stroke-width="5"/>
+<g transform="translate(600 260)"><circle r="64" fill="#2563eb" opacity=".18"/><path d="M0-52C-31-52-54-29-54 1c0 40 54 91 54 91S54 41 54 1C54-29 31-52 0-52Z" fill="#2563eb"/><circle cy="0" r="17" fill="white"/></g>
+<text x="600" y="590" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#244a7d">خريطة توضيحية ثابتة - موقع الفعالية</text>
+</svg>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="دليل فعاليات الجامعة الافتراضية السورية (SVU) لاكتشاف الحفلات والمعارض والأنشطة الثقافية والترفيهية القادمة.">
+  <meta name="theme-color" content="#2563EB">
+  <title>تفاصيل الفعالية | دليل فعاليات الجامعة الافتراضية السورية</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+      <nav class="navbar navbar-expand-lg site-navbar sticky-top">
+        <div class="container">
+<a class="navbar-brand site-logo" href="index.html">
+    <img src="images/logo.png" alt="شعار دليل فعاليات SVU" class="logo-image">
+    دليل فعاليات <span>SVU</span>
+</a>  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="فتح القائمة"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link "  href="index.html">الرئيسية</a>
+              </li>
+<li class="nav-item"><a class="nav-link active"  href="events.html">كل الفعاليات</a>
+              </li>
+<li class="nav-item"><a class="nav-link "  href="about.html">عن الدليل</a>
+              </li>
+<li class="nav-item"><a class="nav-link "  href="contact.html">اتصل بنا</a>
+              </li>
+</ul>
+<a class="btn btn-primary nav-cta" href="events.html">اكتشف الفعاليات</a>
+          </div>
+
+</div>
+</nav>
+</header>
+
+<main>
+
+  <section class="section pb-0">
+    <div class="container">
+
+      <!-- مسار التنقل -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">الرئيسية</a>
+              </li>
+
+          <li class="breadcrumb-item"><a href="events.html">كل الفعاليات</a>
+              </li>
+
+          <li class="breadcrumb-item active" aria-current="page" id="breadcrumbTitle">التفاصيل</li>
+
+        </ol>
+
+      </nav>
+
+
+      <!-- مكان رسالة نجاح الحجز -->
+      <div id="bookingAlert">
+          </div>
+
+
+      <!-- تفاصيل الفعالية   -->
+      <div id="eventDetails">
+          </div>
+
+      <div class="alert alert-danger text-center d-none" id="notFound" role="alert">
+        <h4 class="alert-heading">الفعالية غير موجودة</h4>
+
+        <p>الرابط غير صحيح أو الفعالية انحذفت.</p>
+
+        <a href="events.html" class="btn btn-primary">العودة لكل الفعاليات</a>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- فعاليات مشابهة -->
+  <section class="section" id="similarSection">
+    <div class="container">
+      <h2 class="section-title">قد تعجبك أيضاً</h2>
+
+      <div class="row g-4" id="similarEvents">
+          </div>
+
+    </div>
+
+  </section>
+
+
+  <!--  الحجز -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingModalLabel">حجز مقعد: <span id="modalEventTitle"></span>
+              </h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+        </div>
+
+        <form id="bookingForm" novalidate>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="bookName" class="form-label">الاسم الكامل</label>
+              <input type="text" class="form-control" id="bookName" placeholder="مثال: سليمان أحمد">
+              <div class="invalid-feedback">الرجاء إدخال اسم من 3 أحرف على الأقل.</div>
+
+            </div>
+
+            <div class="mb-3">
+              <label for="bookPhone" class="form-label">رقم الموبايل</label>
+              <input type="tel" class="form-control" id="bookPhone" placeholder="09XXXXXXXX" dir="ltr">
+              <div class="invalid-feedback">أدخل رقم موبايل سوري صحيح مثل 0912345678.</div>
+
+            </div>
+
+            <div class="mb-3">
+              <label for="bookTickets" class="form-label">عدد المقاعد</label>
+              <select class="form-select" id="bookTickets">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">إلغاء</button>
+            <button type="submit" class="btn btn-primary">تأكيد الحجز</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</main>
+
+<footer class="site-footer">
+      <div class="container">
+        <div class="row gy-4">
+  <div class="col-md-4">
+            <h5>دليل فعاليات الجامعة الافتراضية السورية</h5>
+</div>
+
+  <div class="col-md-4">
+            <h5>روابط سريعة</h5>
+<ul class="list-unstyled footer-links">
+              <li><a href="index.html">الرئيسية</a>
+              </li>
+<li><a href="events.html">كل الفعاليات</a>
+              </li>
+<li><a href="about.html">عن الدليل</a>
+              </li>
+<li><a href="contact.html">اتصل بنا</a>
+              </li>
+</ul>
+</div>
+
+<div class="col-md-4">
+            <h5>تواصل معنا</h5>
+<p class="mb-2">البريد: <a href="mailto:info@svu-events.example">info@svu-events.example</a></p>
+<p class="mb-2">إنستغرام : <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            </p>
+<p class="mb-0">فيسبوك : <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+            </p>
+</div>
+</div>
+<div class="copyright">© 2026 دليل فعاليات الجامعة الافتراضية السورية — جميع الحقوق محفوظة</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/events.js"></script><script src="js/main.js"></script>
+</body>
+</html>
